@@ -17,7 +17,7 @@
    ============================================================================ */
 @theme static {
   /* --- Brand ------------------------------------------------------------ */
-  --rgb-primary: 151 80 44; /* #fc502c */
+  --rgb-primary: 252 80 44; /* #fc502c */
   --color-primary: rgb(var(--rgb-primary));
   --color-primary-0: rgb(var(--rgb-primary) / 0); /* gradient fade-out */
   --color-primary-40: rgb(var(--rgb-primary) / 0.4); /* dot glow */

@@ -226,11 +226,9 @@ const HomeHeader: React.FC = () => {
         <div className={`flex items-center gap-2 md:gap-3 ${introClass}`}>
           {/* Logo */}
           <Link to="/">
-            <img
-              src="/stablesummitlogo.svg"
-              alt="Stable Summit Logo"
-              className="h-8 w-auto md:h-11"
-            />
+            <span className="font-headline font-semibold text-2xl md:text-3xl leading-none tracking-tight text-charcoal whitespace-nowrap">
+              Capital Summit
+            </span>
           </Link>
         </div>
 
