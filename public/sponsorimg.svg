@@ -1,0 +1,33 @@
+<svg width="737" height="329" viewBox="0 0 737 329" fill="none" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="102.712" cy="102.712" rx="102.712" ry="102.712" transform="matrix(-1 0 0 1 204.16 61.6277)" fill="url(#paint0_radial_3184_2009)" stroke="url(#paint1_linear_3184_2009)"/>
+<ellipse cx="368.499" cy="164.34" rx="164.339" ry="164.34" fill="url(#paint2_radial_3184_2009)" stroke="url(#paint3_linear_3184_2009)"/>
+<ellipse cx="635.554" cy="164.34" rx="102.712" ry="102.712" fill="url(#paint4_radial_3184_2009)" stroke="url(#paint5_linear_3184_2009)"/>
+<rect x="537.771" y="169.271" width="9.86035" height="9.86038" transform="rotate(-180 537.771 169.271)" fill="#FC502C"/>
+<rect x="209.09" y="169.271" width="9.86035" height="9.86038" transform="rotate(-180 209.09 169.271)" fill="#FC502C"/>
+<defs>
+<radialGradient id="paint0_radial_3184_2009" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(126.952 102.712) scale(121.611 121.611)">
+<stop offset="0.5" stop-color="#F9F8F6" stop-opacity="0"/>
+<stop offset="1" stop-color="#FC502C" stop-opacity="0.5"/>
+</radialGradient>
+<linearGradient id="paint1_linear_3184_2009" x1="102.712" y1="0" x2="102.712" y2="205.424" gradientUnits="userSpaceOnUse">
+<stop stop-color="#B8B3AD"/>
+<stop offset="0.5" stop-color="#B8B3AD" stop-opacity="0"/>
+</linearGradient>
+<radialGradient id="paint2_radial_3184_2009" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(368.499 125.672) rotate(-90) scale(186.574 186.573)">
+<stop offset="0.5" stop-color="#F9F8F6" stop-opacity="0"/>
+<stop offset="1" stop-color="#FC502C" stop-opacity="0.5"/>
+</radialGradient>
+<linearGradient id="paint3_linear_3184_2009" x1="368.499" y1="9.15527e-05" x2="368.499" y2="328.679" gradientUnits="userSpaceOnUse">
+<stop stop-color="#B8B3AD"/>
+<stop offset="0.5" stop-color="#B8B3AD" stop-opacity="0"/>
+</linearGradient>
+<radialGradient id="paint4_radial_3184_2009" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(659.794 164.34) scale(121.611 121.611)">
+<stop offset="0.5" stop-color="#F9F8F6" stop-opacity="0"/>
+<stop offset="1" stop-color="#FC502C" stop-opacity="0.5"/>
+</radialGradient>
+<linearGradient id="paint5_linear_3184_2009" x1="635.554" y1="61.6277" x2="635.554" y2="267.052" gradientUnits="userSpaceOnUse">
+<stop stop-color="#B8B3AD"/>
+<stop offset="0.5" stop-color="#B8B3AD" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

@@ -1,0 +1,98 @@
+{
+  "hostedBy": {
+    "name": "Stake Capital Group",
+    "logo": "/images/partners/curve-logo-white.svg",
+    "website": "https://www.curve.finance/",
+    "height": "h-12 md:h-17 lg:h-21"
+  },
+  "withPartner": {
+    "name": "Enterprise Ethereum Alliance",
+    "logo": "/images/partners/EEA-logo-white.svg",
+    "website": "https://entethalliance.org/",
+    "height": "h-18 md:h-23 lg:h-30"
+  },
+  "title": {
+    "name": "Bridge",
+    "logo": "/images/partners/logo.svg",
+    "website": "https://www.bridge.xyz",
+    "height": "h-16 md:h-25 lg:h-28"
+  },
+  "platinumSponsors": [
+    {
+      "name": "stellar",
+      "logo": "/images/partners/stellar_white.svg",
+      "website": "https://stellar.org/",
+      "height": "h-14 lg:h-18.5"
+    },
+    {
+      "name": "Midas",
+      "logo": "/images/partners/midas-logo-white.svg",
+      "website": "https://midas.app/",
+      "height": "h-20 lg:h-26.5 -mt-5.5 sm:mt-0"
+    },
+    {
+      "name": "Accountable",
+      "logo": "/images/partners/Logo-Wordmark-Light-Transparent.svg",
+      "website": "https://www.accountable.capital/",
+      "height": "h-19 lg:h-23.5 -mt-3.5"
+    },
+    {
+      "name": "Frankencoin",
+      "logo": "/images/partners/frankencoin_logo_mono_white.svg",
+      "website": "https://www.frankencoin.com/",
+      "height": "h-8.5 lg:h-11 -mt-3"
+    },
+    {
+      "name": "Credit Coop",
+      "logo": "/images/partners/credit-coop-white.svg",
+      "website": "https://www.creditcoop.xyz/"
+    }
+  ],
+  "goldSponsors": [
+    {
+      "name": "Tellor",
+      "logo": "/images/partners/tellor-white.png",
+      "website": "https://tellor.io/",
+      "height": "h-7.5 lg:h-10"
+    },
+    {
+      "name": "fxUSD",
+      "logo": "/images/partners/fx-logo-white.svg",
+      "website": "https://fx.aladdin.club/",
+      "height": "h-9 lg:h-11 md:mb-4"
+    },
+    {
+      "name": "Hyli",
+      "logo": "/images/partners/hyli-black.webp",
+      "website": "https://www.hyli.org/",
+      "width": "w-[70px] sm:w-[95px] invert brightness-0"
+    },
+    {
+      "name": "Herd Labs",
+      "logo": "/images/partners/herd.png",
+      "website": "https://herd.eco/",
+      "width": "w-[48px] sm:w-[56px] invert brightness-0"
+    }
+  ],
+  "mediaPartners": [
+    {
+      "name": "Leviathan News",
+      "logo": "/images/partners/SquidFavicon.svg",
+      "website": "https://substack.com/@leviathannews",
+      "height": "h-9 lg:h-9"
+    },
+    {
+      "name": "Stablewatch",
+      "logo": "/images/partners/white_SW.svg",
+      "website": "https://www.stablewatch.io/",
+      "height": "h-5 lg:h-6"
+    },
+    {
+      "name": "Bluechip",
+      "logo": "/images/partners/blue-chip.svg",
+      "website": "https://bluechip.org/en",
+      "height": "h-5 lg:h-6",
+      "width": "w-25 sm:w-30"
+    }
+  ]
+}

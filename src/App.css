@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap");
+
+#root {
+  max-width: 100vw;
+  margin: 0 auto;
+  width: 100%;
+}
+.container {
+  background-color: var(--color-black);
+  overflow-y: auto;
+  width: 100vw;
+  max-width: 100%;
+  margin: 0;
+  padding: 0 50px;
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+/* The card a deep link landed on. Marks which item is under review, then fades
+   out — see useScrollToHash. */
+.hash-target-highlight {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 10px;
+  animation: hash-target-fade 2.6s ease-out forwards;
+}
+
+@keyframes hash-target-fade {
+  0%,
+  70% {
+    outline-color: var(--color-primary);
+  }
+  100% {
+    outline-color: transparent;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hash-target-highlight {
+    animation-duration: 0.01ms;
+  }
+}
+
+.sponsorItem {
+  transition: all 0.3s ease;
+}
+.sponsorItem:hover {
+  box-shadow: 0 0 20px 4px var(--color-white-30);
+  background-color: var(--color-white-5);
+}
