@@ -82,19 +82,29 @@ const BottomSection: React.FC = () => {
       >
         <div className="max-w-4xl md:max-w-full lg:max-w-4xl mx-0 md:mx-0 lg:mx-0 w-full">
           <h2 className="font-headline text-[16px] md:text-[28px] lg:text-[32px] leading-[110%]  mb-5 md:mb-8 text-text-medium font-light">
-            <span className="text-primary">Stable Summit</span> is the world's
-            leading conference series dedicated to stablecoins and programmable
-            money
+            <span className="text-primary">Capital Summit</span> London is where
+            the people allocating capital onchain meet the teams building the
+            infrastructure to support them at scale
           </h2>
           <div className="flex flex-col gap-5 text-text-medium font-sans text-xs md:text-base lg:text-xl font-normal leading-tight max-w-3xl">
             <p>
-              Since 2023, Stable Summit has convened senior builders, protocol
-              teams, stablecoin issuers, financial institutions, and
-              policymakers across multiple continents.
+              Capital Summit: London brings together 350–400 senior
+              representatives from venture and institutional investors, asset
+              managers, LPs, market makers, corporate treasuries and onchain
+              infrastructure teams.
             </p>
             <p>
-              The summit operates as a neutral, technically rigorous forum
-              focused on real-world deployment, risk, and infrastructure.
+              The programme focuses on the work already underway, not the case
+              for institutional adoption: execution certainty and dedicated
+              block space, the privacy and compliance conditions regulated
+              allocators require, how onchain issuance and settlement are
+              reshaping capital markets economics, and where risk standards,
+              collateral terms and market making practice still fall short of
+              institutional expectations.
+            </p>
+            <p>
+              Closing: Capital Summit convenes the two sides of institutional
+              onchain adoption — capital and infrastructure — in one room.
             </p>
           </div>
         </div>

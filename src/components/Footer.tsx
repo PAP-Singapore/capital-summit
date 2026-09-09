@@ -12,9 +12,9 @@ const footerColumns = [
     links: [{ label: "About", href: "/about" }],
   },
   {
-    title: "Singapore",
+    title: "London",
     links: [
-      { label: "Venue", href: "/venue/Singapore" },
+      { label: "Venue", href: "/venue/london" },
       // { label: "Agenda", href: "/agenda" },
     ],
   },

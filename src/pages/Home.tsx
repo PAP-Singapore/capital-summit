@@ -185,15 +185,15 @@ const Home = () => {
               <div className="max-w-4xl md:max-w-full lg:max-w-4xl mx-0 md:mx-0 lg:mx-0 w-full">
                 <h1 className="font-headline text-[36px] sm:text-[48px] md:text-[64px] lg:text-[60px] xl:text-[80px] mb-2 md:mb-6 lg:mb-[60px] leading-[100%] tracking-[-1.25px] font-normal fade-in-intro-hero-title">
                   <span className="text-text-medium md:text-medium lg:text-text-medium">
-                    The Global{" "}
+                    Where Capital Meets {""}
                   </span>
-                  <span className="text-primary">Stablecoin</span>
+                  <span className="text-primary"></span>
                   <br />
-                  <span className="text-primary">Conference Series</span>
+                  <span className="text-primary">Infrastructure</span>
                 </h1>
                 <p className="font-headline text-base md:text-[28px] lg:text-[32px] text-text-medium md:text-medium mb-7 md:mb-10 lg:mb-[55px] font-light max-w-xl md:max-w-md lg:max-w-2xl md:mx-0 lg:mx-0 leading-[100%] tracking-[0%] lg:tracking-[0%] fade-in-intro-hero-description">
-                  Where stablecoin builders, issuers, institutions and
-                  regulators convene
+                  Where capital allocators and onchain infrastructure teams
+                  convene
                 </p>
                 <div className="flex flex-col md:flex-row md:items-end gap-4 md:gap-6">
                   <div className="flex w-full md:w-auto gap-3 md:gap-4 max-[360px]:flex-col fade-in-buttons">
@@ -204,31 +204,33 @@ const Home = () => {
                     >
                       <ButtonNew>Get Tickets</ButtonNew>
                     </a>
-                    <a target="_blank" href={APPLY_FOR_SPONSORS_URL}>
-                      <ButtonNew variant="outline">Apply to Sponsor</ButtonNew>
+                    <a target="_blank" href={"https://stablesummit.xyz"}>
+                      <ButtonNew variant="outline">Visit Main site</ButtonNew>
                     </a>
                   </div>
                   <div className="font-sans text-sm md:text-base lg:hidden text-text-dark md:text-black md:ml-auto fade-in-supporting lg:mb-6">
                     <div className="font-medium text-xs md:text-base">
-                      Convene: 360 Madison Ave, New York, NY 10017, United
-                      States
+                      Protein Studios: 31 New Inn Yard, London EC2A 3EY, United
+                      Kingdom
                     </div>
                     <div className="font-normal text-xs md:text-base md:text-right">
-                      → 2026
+                      → London, 13 November 2026
                     </div>
                   </div>
                 </div>
               </div>
             </main>
 
-            {/*
-              <div className="hidden lg:block lg:mt-auto px-10 pb-10 fade-in-supporting">
+            <div className="hidden lg:block lg:mt-auto px-10 pb-10 fade-in-supporting">
               <div className="font-sans text-base text-text-dark">
-                <div className="font-medium lg:text-[20px]">Singapore</div>
-                <div className="font-normal lg:text-xl">→ October 8, 2026</div>
+                <div className="font-medium lg:text-[20px]">
+                  {" "}
+                  Protein Studios: 31 New Inn Yard, London EC2A 3EY, United
+                  Kingdom
+                </div>
+                <div className="font-normal lg:text-xl">→ 13 November 2026</div>
               </div>
             </div>
-            */}
           </div>
           <BottomSection />
         </div>
@@ -238,7 +240,7 @@ const Home = () => {
       <Speakers />
       <Audience />
       <Partners />
-      <Archive />
+      {/* <Archive /> */}
     </div>
   );
 };

@@ -7,11 +7,11 @@ import useFadeInOnScroll from "../../hooks/useFadeInOnScroll";
 gsap.registerPlugin(ScrollTrigger);
 
 const audienceItems = [
-  "Stablecoin Protocol Teams",
-  "DeFi Infrastructure & Middleware",
-  "Fintech & Payments Companies",
-  "Banks, Funds & Institutions",
-  "Regulators & Policy-Adjacent Stakeholders",
+  "Venture Capital, Asset Managers & LPs",
+  "Corporate Treasuries, Insurers & Institutions",
+  "Market Makers & Liquidity Providers",
+  "Prime Brokers, Issuance & Settlement Venues",
+  "Ratings, Research & Risk Teams",
 ];
 
 const Audience: React.FC = () => {
@@ -57,7 +57,8 @@ const Audience: React.FC = () => {
             className="font-headline text-base md:text-[28px] lg:text-[40px] font-light leading-[20.6px] md:leading-none lg:leading-[1.1] text-text-medium mb-5 md:mb-6 lg:mb-18 max-w-[250px] md:max-w-[450px] lg:max-w-[620px]"
             style={{ fontWeight: 300 }}
           >
-            Built for <br></br> decision-makers and implementers
+            Built for <br></br> those allocating capital onchain — and those
+            building the infrastructure they need
           </h2>
 
           <div ref={list2Ref} className="flex flex-col ">

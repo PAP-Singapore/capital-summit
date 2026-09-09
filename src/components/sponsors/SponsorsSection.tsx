@@ -101,7 +101,7 @@ const SponsorsSection: React.FC = () => {
         {/* Heading */}
         <div ref={headingRef} className="text-center mb-7 md:mb-17 px-5">
           <h2 className="hidden md:block font-headline text-xl md:text-[28px] lg:text-[40px] text-background font-light max-w-[300px] md:max-w-[400px] lg:max-w-[575px] mx-auto leading-tight lg:leading-[1.1]">
-            Stable Summit is supported by the biggest names in stablecoins
+            Capital Summit is supported by the biggest names in the ecosystem
           </h2>
           <h2 className="block md:hidden font-headline text-[20px] text-background font-light max-w-[255px] mx-auto leading-[1.2] text-center tracking-normal">
             Supported by the biggest names in stablecoins

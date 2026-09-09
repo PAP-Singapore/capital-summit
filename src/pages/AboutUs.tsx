@@ -30,9 +30,9 @@ const AboutUs = () => {
             <div className="hidden lg:block hero-left"></div>
             <div className="pl-5 md:pl-10 lg:pl-12 pr-5 lg:pr-8 max-w-180">
               <h3 className="font-headline font-normal lg:font-light text-[24px] md:text-[32px] lg:text-[40px] leading-[26.4px] md:leading-[30.8px] lg:leading-11 text-text-medium -tracking-[0.24px] md:tracking-normal mt-6 lg:mt-0">
-                <span className="text-primary">Stable Summit</span> exists to
-                advance the global stablecoin ecosystem through open,
-                technically grounded dialogue
+                <span className="text-primary">Capital Summit</span> exists to
+                bring institutional capital and onchain infrastructure into the
+                same room
               </h3>
               <p className="text-text-medium text-xl md:text-[24px] lg:text-[28px] font-headline font-light leading-[24px] md:leading-[28.8px] lg:leading-[33.6px] mt-5 lg:mt-9">
                 The summit is intentionally neutral, independent, and focused on
@@ -54,12 +54,12 @@ const AboutUs = () => {
         <div className="hidden lg:block bottom-border"></div>
         <div className="pt-0 lg:pt-14 pb-14 mx-auto lg:max-w-[816px]">
           <p className="text-text-medium text-xl md:text-[24px] lg:text-[28px] font-headline font-light leading-[24px] md:leading-[28.8px] lg:leading-[33.6px] lg:text-center -mt-6 lg:mt-0">
-            Since its first edition, Stable Summit has hosted{" "}
+            The programme is intentionally practical — focused on the {""}
             <span className="text-primary">
-              eight events across major global hubs,
+              focused on the execution, compliance and risk
             </span>{" "}
-            convening thousands of participants from across crypto-native and
-            institutional finance
+            conditions institutions need before committing capital at size, not
+            the case for adoption
           </p>
         </div>
       </section>
@@ -79,7 +79,7 @@ const AboutUs = () => {
             <div className="w-2 h-2 absolute -right-1 bg-primary z-99999 -top-1.5 hidden lg:block"></div>
             <div className="left-defi hidden lg:block"></div>
             <p className="text-text-medium text-xl md:text-[24px] lg:text-[28px] font-headline font-light leading-[24px] md:leading-[28.8px] lg:leading-[33.6px] mt-10 lg:mt-0 lg:max-w-[628px]">
-              Stable Summit is produced by{" "}
+              Capital Summit is produced by{" "}
               <span className="text-primary">Party Action People,</span> an
               independent conference and research organisation focused on DeFi,
               stablecoins, and financial infrastructure
