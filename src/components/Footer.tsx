@@ -8,7 +8,7 @@ import {
 
 const footerColumns = [
   {
-    title: "Stable Summit",
+    title: "Capital Summit",
     links: [{ label: "About", href: "/about" }],
   },
   {
@@ -119,7 +119,7 @@ const Footer: React.FC = () => {
               Capital Summit
             </span>
             <div className="flex flex-col text-dark-gray text-[12px] md:text-[16px]  font-sans font-medium leading-[16px] md:leading-[19.84px] md:-tracking-[0.16px]">
-              <span>© Stable Summit</span>
+              <span>© Capital Summit</span>
               <span>A Party Action People Production</span>
             </div>
           </div>
