@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { speakersUI as speakers } from "../data/speakers";
+import { useGetSpeakers } from "../queries/speakers";
 import { BackToTopButton } from "../components/speakers/BackToTopButton";
 import { HeroSection } from "../components/speakers/HeroSection";
 import { SpeakerFilters } from "../components/speakers/SpeakerFilters";
@@ -15,6 +15,12 @@ const SpeakersPage: React.FC = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [showBottomFade, setShowBottomFade] = useState(true);
   const speakersSectionRef = useRef<HTMLElement>(null);
+
+  const {
+    data: speakers = [],
+    isLoading,
+    isError,
+  } = useGetSpeakers();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -86,8 +92,8 @@ const SpeakersPage: React.FC = () => {
 
       <SpeakersList
         filteredSpeakers={filteredSpeakers}
-        loading={false}
-        error={null}
+        loading={isLoading}
+        error={isError ? "Speakers could not be loaded right now." : null}
         speakersSectionRef={speakersSectionRef}
       />
 

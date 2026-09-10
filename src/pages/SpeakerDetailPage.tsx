@@ -3,8 +3,8 @@ import { useParams, useNavigate } from "react-router-dom";
 import { findSpeakerBySlug } from "../utils/slugify";
 import { type SpeakerUI } from "../lib/speakers-client";
 import { type AgendaSession } from "../lib/agenda-client";
-import { speakersUI as speakers } from "../data/speakers";
 import { useGetAgenda } from "../queries/agenda";
+import { useGetSpeakers } from "../queries/speakers";
 import { buildAgendaDays } from "../components/agenda/agenda-types";
 import SpeakerDetailBackNav from "../components/speaker-detail/SpeakerDetailBackNav";
 import SpeakerDetailProfile from "../components/speaker-detail/SpeakerDetailProfile";
@@ -36,12 +36,14 @@ const SpeakerDetailPage: React.FC = () => {
   const [selectedDayKey, setSelectedDayKey] = useState("");
 
   // ── Data fetching ────────────────────────────────────────────────────────────
-  const { data: agendaSessions = [], isLoading: loading } = useGetAgenda();
+  const { data: agendaSessions = [], isLoading: agendaLoading } = useGetAgenda();
+  const { data: speakers = [], isLoading: speakersLoading } = useGetSpeakers();
+  const loading = agendaLoading || speakersLoading;
 
   // ── Derived data ─────────────────────────────────────────────────────────────
   const speaker = useMemo(
     () => findSpeakerBySlug(speakers, speakerId || ""),
-    [speakerId],
+    [speakers, speakerId],
   );
 
   const speakerSessions = useMemo(

@@ -8,7 +8,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import ButtonNew from "../ui/ButtonNew";
 import useFadeInOnScroll from "../../hooks/useFadeInOnScroll";
-import { speakersUI } from "../../data/speakers";
+import { useGetSpeakers } from "../../queries/speakers";
 import SpeakerCard from "../ui/SpeakerCard";
 
 gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
@@ -18,6 +18,7 @@ const Speakers: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
   const starRef = useRef<HTMLDivElement>(null);
   const marqueeRef = useRef<MarqueeHandle>(null);
+  const { data: speakers = [] } = useGetSpeakers();
   const headingRef = useFadeInOnScroll<HTMLDivElement>({
     y: 30,
     duration: 0.7,
@@ -81,7 +82,7 @@ const Speakers: React.FC = () => {
               draggable
               className="[--duration:90s] [--gap:2rem] relative z-[2]"
             >
-              {speakersUI.map((speaker) => (
+              {speakers.map((speaker) => (
                 <SpeakerCard key={speaker.id} speaker={speaker} />
               ))}
             </Marquee>

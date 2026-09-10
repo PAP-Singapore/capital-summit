@@ -2,9 +2,9 @@
  * Client-side agenda API. Fetches sessions with full speaker lists for the speaker detail page.
  */
 import axios from "axios";
-import { PREVIEW_API_BASE, previewApiHeaders } from "./api-config";
+import { API_BASE, apiHeaders } from "./api-config";
 
-const AGENDA_URL = `${PREVIEW_API_BASE}/agenda`;
+const AGENDA_URL = `${API_BASE}/agenda`;
 
 export interface AgendaSessionSpeaker {
   id: string;
@@ -129,7 +129,7 @@ function mapSession(s: RawSession): AgendaSession {
 
 async function fetchFeed(url: string): Promise<AgendaSession[]> {
   try {
-    const res = await axios.get(url, { headers: previewApiHeaders });
+    const res = await axios.get(url, { headers: apiHeaders });
     const data = res.data;
     const raw = Array.isArray(data) ? data : (data?.sessions ?? []);
     if (!Array.isArray(raw)) return [];

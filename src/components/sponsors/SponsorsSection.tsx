@@ -16,7 +16,7 @@ const TIER_ORDER = [
 ];
 
 const API_KEY_MAP: Record<string, string> = {
-  "HOSTED BY": "Hosted By",
+  "HOSTED BY": "Host",
   WITH: "With",
   "TITLE SPONSOR": "Title",
   "PLATINUM SPONSORS": "Platinum",
