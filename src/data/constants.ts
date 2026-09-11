@@ -1,5 +1,5 @@
 export const navItems = [
-  // { label: "Speakers", href: "/speakers", type: "internal" },
+  { label: "Speakers", href: "/speakers", type: "internal" },
   { label: "Sponsors", href: "/sponsors", type: "internal" },
   // {
   //   label: "Agenda",
@@ -85,7 +85,7 @@ export const statValues = {
   ],
 };
 
-export const BUY_TICKETS_URL = "https://sg26.stablecoinsummit.com";
+export const BUY_TICKETS_URL = "https://london2026.stablesummit.xyz";
 export const APPLY_FOR_SPEAKERS_URL =
   "https://app.sessionboard.com/submit/stablecoin-summit-2026/5476ec12-3ccc-4895-af6a-9da46c34ce0e";
 export const APPLY_FOR_SPONSORS_URL =
