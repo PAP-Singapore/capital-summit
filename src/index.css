@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+/* Sponsor logos (and other CMS-authored fields) can carry Tailwind classes that
+   only exist in the API response. Tailwind compiles what it finds in source at
+   build time, so those classes have to be generated explicitly. */
+@source inline("{,sm:,md:,lg:}{h,w,max-h,max-w,min-h,min-w}-{1..40}");
+@source inline("{,sm:,md:,lg:}scale-{50,75,90,95,100,105,110,125,150}");
+@source inline("{,sm:,md:,lg:}{object-contain,object-cover,object-left,object-right,object-top,object-bottom}");
+@source inline("{,sm:,md:,lg:}{invert,grayscale,brightness-0,mix-blend-multiply,mix-blend-darken}");
+
 /* ============================================================================
    COLOR PALETTE — the single source of truth for every color in the app.
 

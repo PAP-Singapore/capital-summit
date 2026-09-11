@@ -3,6 +3,8 @@ import useFadeInOnScroll from "../../hooks/useFadeInOnScroll";
 import { useScrollToHash } from "../../hooks/useScrollToHash";
 import { useGetSponsors } from "../../queries/speakers";
 import { ApiSponsor } from "../../types/sponsor";
+import { cn } from "../../lib/utils";
+import { hasCustomSize, parseCustomCss } from "../../lib/sponsor-css";
 
 // ─── Tier configuration ─────────────────────────────────────────────────────
 
@@ -40,32 +42,31 @@ const SponsorLogo: React.FC<{
   sponsor: ApiSponsor;
   className?: string;
   id?: string;
-}> = ({ sponsor, className, id }) => (
-  <div
-    id={id}
-    className={`flex items-center justify-center ${sponsor.customCss} ${
-      /(w-|h-)/.test(sponsor.customCss)
-        ? className?.replace(
-            /\b(sm:|md:|lg:|xl:)?(w|h)-\[[^\]]+\]|\b(sm:|md:|lg:|xl:)?(w|h)-\S+/g,
-            "",
-          )
-        : className || ""
-    }`}
-  >
-    <a
-      href={sponsor.websiteUrl}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="block w-full h-full transition-all duration-500 hover:scale-105"
-    >
-      <img
-        src={sponsor.imageUrl}
-        alt={sponsor.name}
-        className={`w-full h-full object-contain transition-all duration-500 `}
-      />
-    </a>
-  </div>
-);
+}> = ({ sponsor, className, id }) => {
+  const { classes, style } = parseCustomCss(sponsor.customCss);
+  // `w-auto` so a CMS-authored height scales the logo instead of letterboxing
+  // it inside the tier's fixed width
+  const sizing = hasCustomSize(classes, style) ? "w-auto" : className;
+
+  return (
+    <div id={id} className="flex items-center justify-center">
+      <a
+        href={sponsor.websiteUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block transition-all duration-500 hover:scale-105"
+      >
+        <img
+          src={sponsor.imageUrl}
+          alt={sponsor.name}
+          style={style}
+          // custom classes last so tailwind-merge drops the conflicting tier default
+          className={cn("object-contain", sizing, classes)}
+        />
+      </a>
+    </div>
+  );
+};
 
 // ─── Component ──────────────────────────────────────────────────────────────────
 

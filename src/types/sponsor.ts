@@ -8,7 +8,7 @@ export interface Sponsor {
 }
 
 export interface ApiSponsor {
-  customCss: string;
+  customCss?: string;
   imageUrl: string;
   name: string;
   websiteUrl: string;
