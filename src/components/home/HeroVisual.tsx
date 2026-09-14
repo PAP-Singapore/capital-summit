@@ -47,7 +47,7 @@ const HeroVisual2: React.FC = () => {
         <img
           src="/capital-desktop.png"
           alt=""
-          className="hidden lg:block w-full h-full object-contain object-center bg-background!"
+          className="hidden lg:block w-full h-full object-contain object-right bg-background!"
         />
       </div>
     </div>
