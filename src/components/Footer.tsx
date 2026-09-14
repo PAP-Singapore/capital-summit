@@ -115,9 +115,11 @@ const Footer: React.FC = () => {
 
           {/* Logo & Copyright */}
           <div className="flex flex-col items-start gap-5 md:gap-5 lg:gap-[30px]">
-            <span className="font-headline font-semibold text-xl md:text-2xl leading-none tracking-tight text-white whitespace-nowrap">
-              Capital Summit
-            </span>
+            <img
+              src="/logowhite.svg"
+              alt="Stable Summit"
+              className="w-[98px] md:w-[98px] lg:w-[98px] h-auto"
+            />
             <div className="flex flex-col text-dark-gray text-[12px] md:text-[16px]  font-sans font-medium leading-[16px] md:leading-[19.84px] md:-tracking-[0.16px]">
               <span>© Capital Summit</span>
               <span>A Party Action People Production</span>
