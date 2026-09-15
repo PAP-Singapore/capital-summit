@@ -87,6 +87,6 @@ export const statValues = {
 
 export const BUY_TICKETS_URL = "https://london2026.stablesummit.xyz";
 export const APPLY_FOR_SPEAKERS_URL =
-  "https://app.sessionboard.com/submit/stablecoin-summit-2026/5476ec12-3ccc-4895-af6a-9da46c34ce0e";
+  "https://dash.agendaforge.app/submit/capital-summit-london/speaker-application-form-capital-summit-london-1";
 export const APPLY_FOR_SPONSORS_URL =
-  "https://app.sessionboard.com/applications/stablecoin-summit-2026-sponsors-application-form/b22b1427-c9a0-4e09-ba90-3e1a6ec6ea87";
+  "https://dash.agendaforge.app/events/capital-summit-london/apply/sponsor-application-1";
