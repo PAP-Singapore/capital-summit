@@ -10,11 +10,11 @@ export type Environment = "dev" | "staging" | "prod";
 export const ENVIRONMENT: Environment = "staging";
 
 const PREVIEW_BASE =
-  "https://pap-backend-ebon.vercel.app/api/preview/capital-summit-london";
+  "https://superadmin-dashboard-ecru.vercel.app/api/preview/capital-summit-london";
 const PREVIEW_TOKEN = "pappv_6ghZ9NTYLPAKlvyxFgqVsaWJiqTLBZuc";
 
 const PROD_BASE =
-  "https://pap-backend-ebon.vercel.app/api/public/capital-summit-london";
+  "https://superadmin-dashboard-ecru.vercel.app/api/public/capital-summit-london";
 const PROD_TOKEN = "pap_wm5x0fDoVzCbg4ACCC2cBlxQULrJybwZ";
 
 const CONFIG: Record<Environment, { base: string; token: string }> = {

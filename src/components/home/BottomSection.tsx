@@ -93,18 +93,27 @@ const BottomSection: React.FC = () => {
               managers, LPs, market makers, corporate treasuries and onchain
               infrastructure teams.
             </p>
+            <div className="flex flex-col gap-3">
+              <p>The programme focuses on the work already underway:</p>
+              <ul className="list-disc list-outside pl-5 flex flex-col gap-2">
+                <li>Execution certainty and dedicated block space</li>
+                <li>
+                  Privacy and compliance conditions regulated allocators
+                  actually require
+                </li>
+                <li>
+                  How onchain issuance and settlement are reshaping capital
+                  markets economics
+                </li>
+                <li>
+                  Where risk standards, collateral terms and market making still
+                  fall short of institutional expectations
+                </li>
+              </ul>
+            </div>
             <p>
-              The programme focuses on the work already underway, not the case
-              for institutional adoption: execution certainty and dedicated
-              block space, the privacy and compliance conditions regulated
-              allocators require, how onchain issuance and settlement are
-              reshaping capital markets economics, and where risk standards,
-              collateral terms and market making practice still fall short of
-              institutional expectations.
-            </p>
-            <p>
-              Closing: Capital Summit convenes the two sides of institutional
-              onchain adoption — capital and infrastructure — in one room.
+              Capital Summit convenes the two sides of institutional onchain
+              adoption — capital and infrastructure — in one room.
             </p>
           </div>
         </div>
