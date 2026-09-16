@@ -7,7 +7,7 @@
  */
 export type Environment = "dev" | "staging" | "prod";
 
-export const ENVIRONMENT: Environment = "staging";
+export const ENVIRONMENT: Environment = "prod";
 
 const PREVIEW_BASE =
   "https://superadmin-dashboard-ecru.vercel.app/api/preview/capital-summit-london";
