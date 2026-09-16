@@ -204,8 +204,8 @@ const Home = () => {
                     >
                       <ButtonNew>Get Tickets</ButtonNew>
                     </a>
-                    <a target="_blank" href={"https://stablesummit.xyz"}>
-                      <ButtonNew variant="outline">Visit Main site</ButtonNew>
+                    <a target="_blank" href={APPLY_FOR_SPONSORS_URL}>
+                      <ButtonNew variant="outline">Apply to Sponsor</ButtonNew>
                     </a>
                   </div>
                   <div className="font-sans text-sm md:text-base lg:hidden text-text-dark md:text-black md:ml-auto fade-in-supporting lg:mb-6">
