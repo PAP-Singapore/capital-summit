@@ -9,7 +9,6 @@ import Partners from "../components/home/Partners";
 import ConferenceListWithImage from "../components/home/ConferenceListWithImage";
 import ButtonNew from "../components/ui/ButtonNew";
 import HeroVisual from "../components/home/HeroVisual";
-import Archive from "../components/home/Archive";
 import { BUY_TICKETS_URL, APPLY_FOR_SPONSORS_URL } from "../data/constants";
 
 const Home = () => {
