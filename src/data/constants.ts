@@ -1,9 +1,4 @@
 export const navItems = [
-  {
-    label: "Apply to Attend",
-    href: "https://london2026.stablesummit.xyz",
-    type: "external",
-  },
   { label: "Speakers", href: "/speakers", type: "internal" },
   { label: "Sponsors", href: "/sponsors", type: "internal" },
   // {

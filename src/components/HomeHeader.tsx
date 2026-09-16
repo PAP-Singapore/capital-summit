@@ -174,19 +174,9 @@ const HomeHeader: React.FC = () => {
 
   const introClass = "fade-in-intro-header";
 
-  // Desktop dropdown sits on a 7-column grid so every cell is the same width.
-  // Offset the first item so the row is centred whatever the nav item count is.
-  const NAV_COLUMNS = 7;
-  const colStartClasses = [
-    "col-start-1",
-    "col-start-2",
-    "col-start-3",
-    "col-start-4",
-  ];
-  const navColStart =
-    colStartClasses[
-      Math.max(0, Math.floor((NAV_COLUMNS - navItems.length) / 2))
-    ] ?? "col-start-1";
+  // Desktop dropdown keeps the original 7-column cell width, but centres the
+  // row as a flex group so it stays centred whatever the nav item count is.
+  const NAV_CELL_WIDTH = "w-[calc(100%/7)]";
 
   return (
     <>
@@ -302,13 +292,11 @@ const HomeHeader: React.FC = () => {
           className="absolute top-full left-0 w-full bg-background z-90 shadow-lg overflow-hidden hidden lg:flex flex-col"
           style={{ visibility: "hidden", clipPath: "inset(0 0 100% 0)" }}
         >
-          <nav className="w-full grid grid-cols-7 min-h-[86px] h-fit border-b border-background">
+          <nav className="w-full flex justify-center min-h-[86px] h-fit border-b border-background">
             {navItems.map((item, index) => (
               <div
                 key={item.label}
-                className={`relative flex items-center justify-center group overflow-hidden ${
-                  index === 0 ? navColStart : ""
-                }`}
+                className={`relative flex items-center justify-center group overflow-hidden shrink-0 ${NAV_CELL_WIDTH}`}
               >
                 {/* Hover gradient from bottom */}
                 <div className="absolute inset-0 z-0 flex justify-center items-end pointer-events-none origin-bottom scale-y-0 transition-transform duration-500 ease-out group-hover:scale-y-100">
