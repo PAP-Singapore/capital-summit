@@ -1,4 +1,9 @@
 export const navItems = [
+  {
+    label: "Apply to Attend",
+    href: "https://london2026.stablesummit.xyz",
+    type: "external",
+  },
   { label: "Speakers", href: "/speakers", type: "internal" },
   { label: "Sponsors", href: "/sponsors", type: "internal" },
   // {
@@ -6,8 +11,13 @@ export const navItems = [
   //   href: "/agenda",
   //   type: "internal",
   // },
-  { label: "Archive", href: "/archive", type: "internal" },
   { label: "About", href: "/about", type: "internal" },
+
+  {
+    label: "Stable Summit",
+    href: "https://stablesummit.xyz",
+    type: "external",
+  },
 ];
 
 export const privacyItems = [

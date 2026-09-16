@@ -190,7 +190,7 @@ const Header: React.FC = () => {
               {item.type === "internal" ? (
                 <Link
                   to={item.href}
-                  className="text-sm md:text-base lg:text-lg xl:text-xl font-medium text-text-medium hover:text-primary transition-colors cursor-pointer"
+                  className="text-sm md:text-base lg:text-lg xl:text-xl font-medium text-text-medium hover:text-primary transition-colors cursor-pointer whitespace-nowrap"
                 >
                   {item.label}
                 </Link>
@@ -199,7 +199,7 @@ const Header: React.FC = () => {
                   href={item.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm md:text-base lg:text-lg xl:text-xl font-medium text-text-medium hover:text-primary transition-colors cursor-pointer"
+                  className="text-sm md:text-base lg:text-lg xl:text-xl font-medium text-text-medium hover:text-primary transition-colors cursor-pointer whitespace-nowrap"
                 >
                   {item.label}
                 </a>

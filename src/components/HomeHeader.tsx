@@ -174,6 +174,20 @@ const HomeHeader: React.FC = () => {
 
   const introClass = "fade-in-intro-header";
 
+  // Desktop dropdown sits on a 7-column grid so every cell is the same width.
+  // Offset the first item so the row is centred whatever the nav item count is.
+  const NAV_COLUMNS = 7;
+  const colStartClasses = [
+    "col-start-1",
+    "col-start-2",
+    "col-start-3",
+    "col-start-4",
+  ];
+  const navColStart =
+    colStartClasses[
+      Math.max(0, Math.floor((NAV_COLUMNS - navItems.length) / 2))
+    ] ?? "col-start-1";
+
   return (
     <>
       <header
@@ -293,18 +307,20 @@ const HomeHeader: React.FC = () => {
               <div
                 key={item.label}
                 className={`relative flex items-center justify-center group overflow-hidden ${
-                  index === 0 ? "col-start-3" : ""
+                  index === 0 ? navColStart : ""
                 }`}
               >
                 {/* Hover gradient from bottom */}
                 <div className="absolute inset-0 z-0 flex justify-center items-end pointer-events-none origin-bottom scale-y-0 transition-transform duration-500 ease-out group-hover:scale-y-100">
                   <div className="w-[300%] h-[140px] bg-[radial-gradient(ellipse_at_bottom,var(--color-primary-light)_40%,transparent_71%)] translate-y-1/2 relative top-[30px]"></div>
                 </div>
-                <div className="absolute right-0 top-0 w-px h-full bg-[linear-gradient(90deg,var(--color-dark-gray-20)_0%,var(--color-dark-gray)_49.18%)]"></div>
+                {index < navItems.length - 1 && (
+                  <div className="absolute right-0 top-0 w-px h-full bg-[linear-gradient(90deg,var(--color-dark-gray-20)_0%,var(--color-dark-gray)_49.18%)]"></div>
+                )}
                 {item.type === "internal" ? (
                   <Link
                     to={item.href}
-                    className="relative z-10 text-[26px] font-headline font-normal text-center"
+                    className="relative z-10 px-3 text-[26px] leading-tight font-headline font-normal text-center"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {item.label}
@@ -314,7 +330,7 @@ const HomeHeader: React.FC = () => {
                     href={item.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="relative z-10 text-[26px] font-headline font-normal text-center"
+                    className="relative z-10 px-3 text-[26px] leading-tight font-headline font-normal text-center"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {item.label}
