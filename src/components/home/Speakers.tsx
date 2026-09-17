@@ -70,7 +70,7 @@ const Speakers: React.FC = () => {
           >
             <h2 className="font-headline text-base md:text-2xl lg:text-[40px] font-light leading-[1.2] text-text-medium mb-8">
               <span className="text-primary-soft">Speakers</span> shaping the
-              <br /> stablecoin ecosystem
+              <br /> ecosystem
             </h2>
           </div>
 

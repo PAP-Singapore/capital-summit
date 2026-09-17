@@ -41,7 +41,7 @@ export const HeroSection: React.FC<
             Meet the <span className="text-primary font-normal">Speakers</span>
           </h1>
           <p className="font-headline text-xl md:text-[28px] lg:text-[32px] font-light leading-[1.2] text-text-medium max-w-[300px] md:max-w-[500px] mx-auto">
-            Industry leaders shaping the stablecoin ecosystem
+            Industry leaders shaping the ecosystem
           </p>
         </div>
       </div>
