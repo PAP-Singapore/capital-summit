@@ -20,7 +20,8 @@ const BecomeASponsorPage: React.FC = () => {
             Become a <span className="text-primary">sponsor</span>
           </h1>
           <p className="font-headline text-xl md:text-2xl lg:text-[32px] text-text-medium md:max-w-[800px] max-w-[400px] mx-auto leading-[1.2] font-light  ">
-            Stable Summit brings together decision makers across the stablecoin ecosystem, issuance, and policy.
+            Capital Summit brings together decision makers across the stablecoin
+            ecosystem, issuance, and policy.
           </p>
         </div>
       </section>

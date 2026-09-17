@@ -82,7 +82,7 @@ const ConferenceListMobile: React.FC<ConferenceListMobileProps> = ({
         {/* Section Heading */}
         <div className="max-w-2xl mx-auto text-center mb-8 md:mb-[60px] px-5 md:px-0">
           <h2 className="font-headline text-[16px] md:text-[28px] leading-[110%] text-text-medium font-light md:max-w-xl mx-auto">
-            Stable Summit operates as a global conference series, with multiple
+            Capital Summit operates as a global conference series, with multiple
             editions each year
           </h2>
         </div>

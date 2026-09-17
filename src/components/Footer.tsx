@@ -117,7 +117,7 @@ const Footer: React.FC = () => {
           <div className="flex flex-col items-start gap-5 md:gap-5 lg:gap-[30px]">
             <img
               src="/logowhite.svg"
-              alt="Stable Summit"
+              alt="Capital Summit"
               className="w-[98px] md:w-[98px] lg:w-[98px] h-auto"
             />
             <div className="flex flex-col text-dark-gray text-[12px] md:text-[16px]  font-sans font-medium leading-[16px] md:leading-[19.84px] md:-tracking-[0.16px]">

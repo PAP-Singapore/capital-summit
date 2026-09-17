@@ -232,7 +232,7 @@ const HomeHeader: React.FC = () => {
           <Link to="/">
             <img
               src="/stablesummitlogo.svg"
-              alt="Stable Summit Logo"
+              alt="Capital Summit Logo"
               className="h-12 w-auto md:h-15"
             />
           </Link>

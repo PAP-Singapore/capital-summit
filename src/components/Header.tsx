@@ -172,7 +172,7 @@ const Header: React.FC = () => {
           <Link to="/">
             <img
               src="/stablesummitlogo.svg"
-              alt="Stable Summit Logo"
+              alt="Capital Summit Logo"
               className="h-8 w-auto md:h-11"
             />
           </Link>

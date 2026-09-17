@@ -348,7 +348,7 @@ const ConferenceListWithImage: React.FC<ConferenceListWithImageProps> = ({
         <div className="max-w-full mx-auto">
           <div className="max-w-2xl mx-auto text-center mb-8 md:mb-[60px] lg:mb-[72px]">
             <h2 className="font-headline text-[16px] md:text-[28px] lg:text-[32px] leading-[110%] text-text-medium font-light">
-              Stable Summit operates as a global conference series, with
+              Capital Summit operates as a global conference series, with
               multiple editions each year
             </h2>
           </div>

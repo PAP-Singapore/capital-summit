@@ -20,7 +20,7 @@ export const SpeakersCTA: React.FC<{ isRoundTable?: boolean }> = ({
           <h2 className="font-headline text-[24px] md:text-[36px] lg:text-[40px] font-normal md:font-light leading-[1.15] text-text-medium">
             {isRoundTable ? "Want to share your thoughts" : "Want to speak"}
             <br />
-            {isRoundTable ? "on these topics?" : "at Stable Summit?"}
+            {isRoundTable ? "on these topics?" : "at Capital Summit?"}
           </h2>
           <div>
             <a
